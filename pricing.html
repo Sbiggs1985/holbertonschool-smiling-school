@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--IMPORTS BELOW-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <title>Implement A Design with Bootstrap</title>
+</head>
+
+<body style="max-width: 1440px; height: 1170px;">
+
+    <div class="container-fluid">
+        <div class="jumbotron bg-image" style="
+        background-image: url('images/pricing-background.jpg');
+        background-repeat: no-repeat;
+        width: auto;">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/smileschool-logo.jpg" alt="My logo" />
+                </div>
+                <div class="col-6">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+                            <div class="navbar-nav">
+                                <a class="nav-link" href="#courses"
+                                    style="font-family: 'Source Sans Pro'; color: white; font-size: 12px; font-weight: 700;">Courses</a>
+                                <a class="nav-link" href="#pricing"
+                                    style="font-family: 'Source Sans Pro'; color: purple; font-size: 12px; font-weight: 700; text-decoration: underline;">Pricing</a>
+                                <a class="nav-link" href="#login"
+                                    style="font-family: 'Source Sans Pro'; color: white; font-size: 12px; font-weight: 700;">Login</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center h-50">
+                <h3 class="mt-5" style="font-size: 60px; font-weight: 700; color: white; font-family: Source Sans Pro;">
+                    What is <img src="images/smile.png" alt="Smile School Logo" class="align-middle"
+                        style="height: 1em; vertical-align: middle;"> SmileSchool ?</h3>
+                <div class="text-center mb-4" style="margin-top: 50px;"> <!-- Adjust the margin-top value as needed -->
+                    <h3 style="font-size: 60px; font-weight: 700; color: #FFF; font-family: Source Sans Pro;">Go pro!
+                    </h3>
+                </div>
+            </div>
+
+            <!--- 8. PRICES GRID-->
+            <div class="row" style="margin-top: 0px;">
+                <div class="col d-none d-md-block"></div>
+                <div class="col text-center text-white">
+                    <button type="button" class="mb-3 button-one py-2 px-3 text-white rounded-pill"
+                        style="background-color: purple; border: 2px solid purple;">BUY 3 MONTHS</button>
+
+                    <h1 class="font-weight-bold mt-0 mb-0">$3.60</h1>
+                    <p class="text-muted">$1.20/month</p>
+                </div>
+                <div class="col text-center text-white">
+                    <button type="button" class="mb-3 button-one py-2 px-3 text-white rounded-pill"
+                        style="background-color: purple; border: 2px solid purple;">BUY 1 YEAR</button>
+
+                    <h1 class="font-weight-bold mt-0 mb-0">$12.99</h1>
+                    <p class="text-muted">$1.08/month</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-5 d-md-block"></div>
+                <div class="col text-center d-sm-none">
+                    <h5>3 MONTHS</h5>
+                </div>
+                <div class="col text-center d-sm-none">
+                    <h5>1 YEAR</h5>
+                </div>
+            </div>
+            <div class="row pt-4 pb-3 border-bottom border-secondary">
+                <div class="col">
+                    <p class="my-auto" style="color: white;">Unlimited access to all tutorials</p>
+                </div>
+                <div class="col text-center my-auto text-success">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+
+                </div>
+                <div class="col text-center text-success my-auto">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+            </div>
+            <div class="row pt-4 pb-3 border-bottom border-secondary">
+                <div class="col">
+                    <p class="my-auto" style="color: white;">Access SmileSchool private forum</p>
+                </div>
+                <div class="col text-center text-success my-auto">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+                <div class="col text-center my-auto">
+                    <span class="text-success holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+            </div>
+            <div class="row pt-4 pb-3 border-bottom border-secondary">
+                <div class="col">
+                    <p class="my-auto" style="color: white;">Access Smiles contests & Smiles Analysis</p>
+                </div>
+                <div class="col text-center text-success my-auto">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+                <div class="col text-center text-success my-auto">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+            </div>
+            <div class="row pt-4 pb-3">
+                <div class="col">
+                    <p class="my-auto" style="color: white;">Get a free toothbrush</p>
+                </div>
+                <div class="col text-center"></div>
+                <div class="col text-center text-success my-auto">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+            </div>
+            <div class="row pt-4 pb-5 border-top border-secondary">
+                <div class="col">
+                    <img src="images/signal.png" height="35px" alt="signal logo">
+                    <p class="mt-2" style="color: white;">Exclusive discount on all Signal products</p>
+                </div>
+                <div class="col"></div>
+                <div class="col text-center text-success">
+                    <span class="holberton_school-icon-check biggie">
+                        <img src="images/checkmark.jpg" alt="Checkmark" width="24" height="24">
+                    </span>
+                </div>
+            </div>
+            <!--PRICING ENDS-->
+
+
+
+
+
+            <!-- QUOTES SECTION -->
+            <section class="container-fluid bg-barney pt-5 text-white"
+                style="background-color: #C271FF; padding-left: 0 !important; margin-left: 0 !important;">
+                <!-- welcome to the carousel -->
+                <div class="container-lg" style="padding-left: 0; margin-left: 0;">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- first carousel card -->
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="text-center col-md-4">
+                                        <img src="images/Bit.jpg" class="w-50 rounded-circle" alt="Guy">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="card-body">
+                                            <blockquote>« Those tutorials are concise and go straight to the point. I
+                                                can't think of a better place to learn smiling. And it's so fun!
+                                            </blockquote>
+                                            <footer>
+                                                <p class="font-weight-bold">Person Name
+                                                    <br>
+                                                    <span class="font-italic">weather presenter</span>
+                                                </p>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- second carousel card -->
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="text-center col-md-4">
+                                        <img src="images/Bit.jpg" class="w-50 rounded-circle" alt="Guy">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="card-body">
+                                            <blockquote>« Those tutorials are concise and go straight to the point. I
+                                                can't think of a better place to learn smiling. And it's so fun!
+                                            </blockquote>
+                                            <footer>
+                                                <p class="font-weight-bold">Person Name
+                                                    <br>
+                                                    <span class="font-italic">weather presenter</span>
+                                                </p>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                <img src="images/arrow_white_left.png" aria-hidden="true" class="arrow">
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <img src="images/arrow_white_right.png" aria-hidden="true" class="arrow">
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END OF QUOTES SECTION -->
+
+
+            <!--FAQ GRID-->
+            <div class="container bg-light"
+                style="max-width: 1440px; height: 850px; background-color:#FFF font-family: Source Sans Pro;">
+                <h1 class="text-center mt-4 mb-4 font-size: 60px; font-weight: 300px; font-family: Source Sans Pro;">
+                    F.A.Q</h1>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0">
+                            <div class="card-body text-center">
+                                <h3>How does this work?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0">
+                            <div class="card-body text-center">
+                                <h3>How does this work?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0">
+                            <div class="card-body text-center">
+                                <h3>How does this work?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0">
+                            <div class="card-body text-center">
+                                <h3>How does this work?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END OF FAQ GRID-->
+
+<!--FOOTER-->
+<footer class="container-fluid p-4" style="background: #071629; height: 249px;">
+    <div class="row text-white">
+        <div class="col-md-6">
+            <a class="navbar-brand">
+                <img src="images/smileschool-logo.jpg" class="align-top" alt="Smile School" height="30px">
+            </a>
+        </div>
+        <div class="col-md-6 text-right">
+            <img src="images/social-media.jpg" alt="Facebook">
+
+        </div>
+        <div class="col d-flex flex-column text-center" style="padding-top: 120px; opacity: 0.3517;">
+            <p class="f-smile p-0 mt-auto">&copy;smileschool 2020</p>
+        </div>
+    </div>
+</footer>
+<!--END OF FOOTER-->
+
+
+            <!--JQUERY & JAVASCRIPT LIBRARIES-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <!--Jquery Script - References the Jquery library hosted on code.jquery.com-->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <!--Bootstrap JavaScript - References Bootstrap JS library-->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+</body>
+</html>
